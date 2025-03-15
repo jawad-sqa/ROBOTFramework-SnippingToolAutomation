@@ -1,47 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-10T08:26:44.845250" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-15T19:06:45.747068" rpa="false" schemaversion="5">
 <suite id="s1" name="SnippingToolAutomation" source="C:\Users\RYZEN\PycharmProjects\ROBOTFramework-SnippingToolAutomation\Tests\SnippingToolAutomation.robot">
-<test id="s1-t1" name="Automate Snipping Tool" line="13">
-<kw name="Open Snipping Tool">
+<test id="s1-t1" name="Automate Snipping Tool" line="10">
+<kw name="Open Snipping Tool" owner="keywords">
 <kw name="Start Process" owner="Process">
-<msg time="2025-03-10T08:26:46.041965" level="INFO">Starting process:
+<msg time="2025-03-15T19:06:46.325926" level="INFO">Starting process:
 snippingtool.exe</msg>
 <arg>${FILE_NAME}</arg>
 <doc>Starts a new process on background.</doc>
-<status status="PASS" start="2025-03-10T08:26:46.041965" elapsed="0.082913"/>
+<status status="PASS" start="2025-03-15T19:06:46.325926" elapsed="0.025654"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-10T08:26:49.126280" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-15T19:06:49.351909" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-10T08:26:46.125946" elapsed="3.000334"/>
+<status status="PASS" start="2025-03-15T19:06:46.351580" elapsed="3.000329"/>
 </kw>
-<status status="PASS" start="2025-03-10T08:26:46.041461" elapsed="3.084819"/>
+<status status="PASS" start="2025-03-15T19:06:46.325424" elapsed="3.026485"/>
 </kw>
-<kw name="Click New Snip">
-<kw name="Click" owner="RPA.Desktop">
-<msg time="2025-03-10T08:26:49.128315" level="INFO">Resolving locator: image:C:\Users\RYZEN\PycharmProjects\ROBOTFramework-SnippingToolAutomation/ROBOTFramework-SnippingToolAutomation/../Images/NewSnip.png</msg>
-<msg time="2025-03-10T08:26:49.129328" level="INFO">Searching for image 'C:\Users\RYZEN\PycharmProjects\ROBOTFramework-SnippingToolAutomation/ROBOTFramework-SnippingToolAutomation/../Images/NewSnip.png' (region: display, confidence: 80.0)</msg>
-<msg time="2025-03-10T08:26:49.445572" level="INFO">Found 1 match</msg>
-<msg time="2025-03-10T08:26:49.446451" level="INFO" html="true">&lt;img alt="screenshot" class="rpaframework-desktop-screenshot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAvCAIAAAC0Wtk+AAAFPUlEQVR4nO2bb2gTZxzHv0kv65qmnLe/b8adgm8stNOxIM7lZpiolZ5TcBTaWBxMCBZxYK2z7SuZVgXHxNUF6xtnlPbV6B/QCaP2OWsoZdNGqG8cI2e3+mIuXsylNF56e3ESgyaZnlfT6+5D6Ivn+T2/++bT3N3TknMoCQVAZi6TUlKapgEA9J/FcTxHTbbVcxa/UsxKltvH6XRSADKZjKIoAFwul9vjpijK6XS+9IH+R8zNzamqqiQV9ZHqUBLJhw+TmqZVuCs8VZ5SZ7M2yYdJZzqd1rQ5l8tl23x5PFUeZyaTAeD2uEsdZpHgVFUVgMvlKnWSRYJTv7M7HAvxRmxF7Lu5ydhCTcYWajK2UJOZF6ED0fttP/0xH50XPvMi9PJk/Ntf/pyPzgsf+5Q3GVuoydhCTcYyQrmlHLeUC4VChWZ3NO94xZHyYhmhOqd/OC1JUqlTFMNKQnmel2W5o7Oj1EGKYSWhAFpaWgghw8PDpQ5SEMrwyoHo/cuT8bxTv0pJALt77+Sd9ZSXHd+2zNhBd325KxwO7/1q78jVEYZhilTG4/G+vr6LFy/GpBhN04IgtO5r1ZfwPA+AEPLkvQwO7Nmz58jhI01NTfqIJEk+3tfS0tK2v+2FEhoXeu33xJlr94oUFJp9GaEMw5z87uTOL3b2nO0p8lbj8Xhzc3P0VjQQCDS+13h36m44HBaJ2N/fzzBMvVDf3d09eXuyekW1Xn/l5ysAIpFIVujNiZsA/Ov8L5rQuNDj25YV8rK7986Za/fU7z823LwIfr+f5/nu7m7/Or/X681b03O2J3oreunSpayyrZ9t3f759r6+vmAw6P3QC+DGbzeys0QkHMsR8clndmxsjKbpQv2LYLFrqM7hbw7TNH3o0KFCBeFwOBAIZH0B8Hq9HMuNXh8F4Pf7AUQiEX1qfHxcluXW/a2yLE/entQHRSLyPt5ANksKZVn2QNuB6K1o3m2pLigcDutb1+wrJsUmJib0GqFeyH4eh68O19bUbhG2ACAjBIAkSTEptmHjBgPZjJ/ypaWpqam3t7fraNfmzZtZln22gOf5tR+tLbR8zZo1g0OD+mV0aHCosbFRXzJ6fTQYDOoX0JXvrzQQzKpCARw7fqyurq6js+P8j+efna2pqQkGg4XW+nw+AGSEeCo9MSnGf8ID2LRxU3tHO4CxsbHamtq8v6f/xJKnvE71iuqDXx8khAwMDuSOL1++HMDQ4FCRtSzL1tbUjl4fFUWRYzn9arvqg1UAxsfHRSL6eJ+xVBYWCqChoYFjuc7OTpqms4MMwwQCgZgUu3DhQm5x9oaj4+N9hJBIJJJ1V72immO5c+fOxaSYgQ2TjrWFMgxz4sQJWZZlWc4db93XyrFce0e7IAihUCgUCgmCUFdXl/snlq6MiGT9p+uzgz7eR0RibMOkMy9CPeVlnvKy+ej8LF6vV6gXnhpkGKa/vz8QCMiy3HW0q+toF4BTp07pG6bsQpqmZVnOHVy9erUsy8Y2TDqO6am/ALz97juGW9jkYu1TfgFiCzUZW6jJ2EJNxhZqMrZQk7GFmowt1GSc+neXNW2u1EkWCU6KogA8eqSWOski4bHQVFIpdZJFAkVR1Gw6PTMzA4djCbOk1HmszYP4A0cqkUyn09PT0wAqKtxvvPVm+evlZWWv6H9FiwNVVdOz6X/+vp+aSTlSiSSA2dnZqampp6+kBh61yfvcrbFHdoo/wvtCPYu0MiubAwBcr7keCwWgaVoikVAUJZVKqWrG4MEWptAi3czIRrkod6W7ylNVWVn5L5SJ7qdJYG4XAAAAAElFTkSuQmCC" &gt;</msg>
-<msg time="2025-03-10T08:26:49.446451" level="INFO">region:383,63,485,100</msg>
-<msg time="2025-03-10T08:26:49.447455" level="INFO">Moving mouse to (434, 81)</msg>
-<msg time="2025-03-10T08:26:49.548620" level="INFO">Performing mouse action: Action.click</msg>
-<arg>image:${NewSnip}</arg>
-<doc>Click at the element indicated by locator.</doc>
-<status status="PASS" start="2025-03-10T08:26:49.128315" elapsed="0.441134"/>
+<kw name="Click New Snip" owner="keywords">
+<kw name="Press Keys" owner="RPA.Desktop">
+<msg time="2025-03-15T19:06:49.352939" level="INFO">Pressing keys: Key.ctrl, 'n'</msg>
+<arg>ctrl</arg>
+<arg>N</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<status status="PASS" start="2025-03-15T19:06:49.352939" elapsed="0.001000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-10T08:26:51.569898" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-03-15T19:06:51.355750" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-10T08:26:49.569449" elapsed="2.000449"/>
+<status status="PASS" start="2025-03-15T19:06:49.353939" elapsed="2.001811"/>
 </kw>
-<status status="PASS" start="2025-03-10T08:26:49.127327" elapsed="2.442571"/>
+<status status="PASS" start="2025-03-15T19:06:49.352939" elapsed="2.002811"/>
 </kw>
-<status status="PASS" start="2025-03-10T08:26:46.040210" elapsed="5.530693"/>
+<status status="PASS" start="2025-03-15T19:06:46.324110" elapsed="5.031640"/>
 </test>
-<status status="PASS" start="2025-03-10T08:26:44.847227" elapsed="6.724693"/>
+<status status="PASS" start="2025-03-15T19:06:45.748070" elapsed="5.608706"/>
 </suite>
 <statistics>
 <total>
