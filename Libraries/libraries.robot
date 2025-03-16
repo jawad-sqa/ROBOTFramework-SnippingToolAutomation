@@ -1,4 +1,4 @@
 *** Settings ***
-Library    RPA.Desktop
-Library    RPA.Windows
 Library    Process
+Library    RPA.Windows
+Library    RPA.Desktop

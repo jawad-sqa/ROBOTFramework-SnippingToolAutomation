@@ -4,9 +4,11 @@ Resource  ../Libraries/libraries.robot
 *** Keywords ***
 Open Snipping Tool
     Start Process    ${FILE_NAME}
-    Sleep    3
-
+    Sleep    3s
 
 Click New Snip
-    Press Keys      ctrl    N
-    Sleep    2
+    Control Window    name:"Snipping Tool"
+    Sleep       1s
+    RPA.Windows.Click    automationid:NewCaptureButton
+    Sleep       1s
+

@@ -1,42 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-15T19:06:45.747068" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-03-16T23:12:42.714569" rpa="false" schemaversion="5">
 <suite id="s1" name="SnippingToolAutomation" source="C:\Users\RYZEN\PycharmProjects\ROBOTFramework-SnippingToolAutomation\Tests\SnippingToolAutomation.robot">
-<test id="s1-t1" name="Automate Snipping Tool" line="10">
+<test id="s1-t1" name="Automate Snipping Tool" line="7">
 <kw name="Open Snipping Tool" owner="keywords">
 <kw name="Start Process" owner="Process">
-<msg time="2025-03-15T19:06:46.325926" level="INFO">Starting process:
+<msg time="2025-03-16T23:12:43.323641" level="INFO">Starting process:
 snippingtool.exe</msg>
 <arg>${FILE_NAME}</arg>
 <doc>Starts a new process on background.</doc>
-<status status="PASS" start="2025-03-15T19:06:46.325926" elapsed="0.025654"/>
+<status status="PASS" start="2025-03-16T23:12:43.323641" elapsed="0.052886"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-15T19:06:49.351909" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
+<msg time="2025-03-16T23:12:46.376694" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-15T19:06:46.351580" elapsed="3.000329"/>
+<status status="PASS" start="2025-03-16T23:12:43.376527" elapsed="3.000167"/>
 </kw>
-<status status="PASS" start="2025-03-15T19:06:46.325424" elapsed="3.026485"/>
+<status status="PASS" start="2025-03-16T23:12:43.323641" elapsed="3.053053"/>
 </kw>
 <kw name="Click New Snip" owner="keywords">
-<kw name="Press Keys" owner="RPA.Desktop">
-<msg time="2025-03-15T19:06:49.352939" level="INFO">Pressing keys: Key.ctrl, 'n'</msg>
-<arg>ctrl</arg>
-<arg>N</arg>
-<doc>Press multiple keys down simultaneously.</doc>
-<status status="PASS" start="2025-03-15T19:06:49.352939" elapsed="0.001000"/>
+<kw name="Control Window" owner="RPA.Windows">
+<msg time="2025-03-16T23:12:46.384161" level="INFO">Getting element with locator: name:"Snipping Tool" and type:WindowControl</msg>
+<msg time="2025-03-16T23:12:46.384161" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000016EF1E28190&gt;, locator='name:"Snipping Tool" and type:WindowControl', name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg time="2025-03-16T23:12:46.384161" level="INFO">Locator 'name:"Snipping Tool" and type:WindowControl' produced matcher: MatchObject(locators=[('Name', 'Snipping Tool', 0), ('ControlType', 'WindowControl', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-16T23:12:46.669579" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000016EF1E23F50&gt;, locator='name:"Snipping Tool" and type:WindowControl', name='Snipping Tool', automation_id='', control_type='WindowControl', class_name='XamlWindow', left=61, right=833, top=0, bottom=356, width=772, height=356, xcenter=447, ycenter=178)</msg>
+<arg>name:"Snipping Tool"</arg>
+<tag>window</tag>
+<doc>Controls the window defined by the locator.</doc>
+<status status="PASS" start="2025-03-16T23:12:46.377201" elapsed="0.793884"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-15T19:06:51.355750" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
+<msg time="2025-03-16T23:12:48.172420" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-15T19:06:49.353939" elapsed="2.001811"/>
+<status status="PASS" start="2025-03-16T23:12:47.171085" elapsed="1.001335"/>
 </kw>
-<status status="PASS" start="2025-03-15T19:06:49.352939" elapsed="2.002811"/>
+<kw name="Click" owner="RPA.Windows">
+<msg time="2025-03-16T23:12:48.173434" level="INFO">Getting element with locator: automationid:NewCaptureButton</msg>
+<msg time="2025-03-16T23:12:48.173434" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.WindowControl object at 0x0000016EF1E23F50&gt;, locator='name:"Snipping Tool" and type:WindowControl', name='Snipping Tool', automation_id='', control_type='WindowControl', class_name='XamlWindow', left=61, right=833, top=0, bottom=356, width=772, height=356, xcenter=447, ycenter=178)</msg>
+<msg time="2025-03-16T23:12:48.173434" level="INFO">Locator 'automationid:NewCaptureButton' produced matcher: MatchObject(locators=[('AutomationId', 'NewCaptureButton', 0)], _classes=set(), max_level=0)</msg>
+<msg time="2025-03-16T23:12:48.182981" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000016EEF71F390&gt;, locator='automationid:NewCaptureButton', name='New screenshot', automation_id='NewCaptureButton', control_type='ButtonControl', class_name='Button', left=96, right=211, top=57, bottom=105, width=115, height=48, xcenter=153, ycenter=81)</msg>
+<arg>automationid:NewCaptureButton</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<status status="PASS" start="2025-03-16T23:12:48.172420" elapsed="0.578496"/>
 </kw>
-<status status="PASS" start="2025-03-15T19:06:46.324110" elapsed="5.031640"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-16T23:12:49.751909" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-16T23:12:48.751421" elapsed="1.000488"/>
+</kw>
+<status status="PASS" start="2025-03-16T23:12:46.377201" elapsed="3.375213"/>
+</kw>
+<status status="PASS" start="2025-03-16T23:12:43.322638" elapsed="6.429776"/>
 </test>
-<status status="PASS" start="2025-03-15T19:06:45.748070" elapsed="5.608706"/>
+<status status="PASS" start="2025-03-16T23:12:42.715071" elapsed="7.038348"/>
 </suite>
 <statistics>
 <total>
